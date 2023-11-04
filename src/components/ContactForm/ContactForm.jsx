@@ -1,12 +1,12 @@
-
+import css from "./ContactForm.module.css"
 export const ContactForm = ({ submit }) => {
   return (
-    <form onSubmit={submit}>
-      <label htmlFor="name">Name</label>
-      <input type="text" name="name" id="name" required  />
-      <label htmlFor="number">Number</label>
-      <input type="tel" name="number" id="number" required  />
-      <button type="submit">Add contact</button>
+    <form className={css.form} onSubmit={submit}>
+      <label className={css.label} htmlFor="name">Name</label>
+      <input className={css.input} type="text" name="name" id="name" required  />
+      <label className={css.label} htmlFor="number">Number</label>
+      <input className={css.input} type="tel" name="number" id="number" required  />
+      <button className={css.button} type="submit">Add contact</button>
     </form>
   );
 };

@@ -57,6 +57,7 @@ this.setState(prevState => {
         fontSize: 40,
         color: '#010101',
         paddingLeft: '20px',
+        paddingBottom: '20px'
       }}
     >
       <h1>Phonebook</h1>
